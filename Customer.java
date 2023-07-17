@@ -123,7 +123,7 @@ public class Customer {
         favoriteItems.add(item);
     }
 
-    public void removeFromFavoriteItems(String itemName) {
+    public void removeFromFavoriteItems(OrderItem itemName) {
         favoriteItems.remove(itemName);
     }
 
