@@ -114,10 +114,10 @@ public class Customer {
     public Gift getCustomerGift() {
         return customerGift;
     }
-    public void addToFavoriteItems(OrderItem item) {
+     public void addToFavoriteItems(OrderItem item) {
         for (OrderItem favoriteItem : favoriteItems) {
-            if (favoriteItem.getItemName().equals(item.getItemName()) && favoriteItem.getId() == item.getId()) {
-                return; // Item already exists in the favorite list
+            if (favoriteItem.getItemName().equals(item.getItemName())) {
+                return; 
             }
         }
         favoriteItems.add(item);
